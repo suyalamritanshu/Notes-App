@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.notesapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/noteslogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/noteslogo"
+        android:usesCleartextTraffic="true"
+
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NotesApp">
+        <activity android:name=".Activity.NotesDetailActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".Activity.EditNoteActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity
+            android:name=".Activity.CreateNotesActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".Activity.NotesActivity" />
+        <activity android:name=".Activity.ForgotActivity" />
+        <activity android:name=".Activity.SignUpActivity" />
+        <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
